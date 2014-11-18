@@ -5,4 +5,5 @@ iso
 virtualfloppy.vfd
 packer_cache
 packer.log
+vdi
 .DS_Store
