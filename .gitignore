@@ -7,3 +7,6 @@ packer_cache
 packer.log
 vdi
 .DS_Store
+packer.out
+
+
