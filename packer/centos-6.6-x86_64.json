@@ -102,7 +102,7 @@
   ],
   "post-processors": [
     {
-      "output": "../builds/{{.Provider}}/opscode_centos-6.6_chef-{{user `chef_version`}}.box",
+      "output": "../builds/{{.Provider}}/centos-6.6_chef-{{user `chef_version`}}.box",
       "type": "vagrant"
     }
   ],
@@ -125,7 +125,7 @@
     }
   ],
   "variables": {
-    "chef_version": "provisionerless",
+    "chef_version": "latest",
     "mirror": "http://mirrors.kernel.org/centos"
   }
 }
