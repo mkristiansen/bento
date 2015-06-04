@@ -127,7 +127,7 @@
   ],
   "variables": {
     "chef_version": "latest",
-    "X-windows": "false",
+    "X-windows": "true",
     "mirror": "http://ftp.heanet.ie/mirrors/centos/"
   }
 }
