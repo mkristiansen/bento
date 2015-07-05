@@ -34,7 +34,7 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "packer-centos-5.11-x86_64"
+      "vm_name": "packer-centos-5.11"
     },
     {
       "boot_command": [
@@ -55,7 +55,7 @@
       "ssh_wait_timeout": "10000s",
       "tools_upload_flavor": "linux",
       "type": "vmware-iso",
-      "vm_name": "packer-centos-5.11-x86_64",
+      "vm_name": "packer-centos-5.11",
       "vmx_data": {
         "cpuid.coresPerSocket": "1",
         "memsize": "384",
@@ -74,7 +74,7 @@
       "iso_checksum": "ebd77f2fdfac8da04f31c508905cf52aa62937cc",
       "iso_checksum_type": "sha1",
       "iso_url": "{{user `mirror`}}/5.11/isos/x86_64/CentOS-5.11-x86_64-bin-DVD-1of2.iso",
-      "output_directory": "packer-centos-5.11-x86_64-parallels",
+      "output_directory": "packer-centos-5.11",
       "shutdown_command": "echo 'vagrant'|sudo -S /sbin/halt -h -p",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -96,14 +96,14 @@
         ]
       ],
       "prlctl_version_file": ".prlctl_version",
-      "vm_name": "packer-centos-5.11-x86_64"
+      "vm_name": "packer-centos-5.11"
     }
 
 
   ],
   "post-processors": [
     {
-      "output": "../builds/{{.Provider}}/opscode_centos-5.11_chef-{{user `chef_version`}}.box",
+      "output": "../builds/{{.Provider}}/centos-5.11_{{user `chef_version`}}.box",
       "type": "vagrant"
     }
   ],
