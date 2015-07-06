@@ -116,9 +116,9 @@
         "scripts/centos/fix-slow-dns.sh",
         "scripts/common/sshd.sh",
         "scripts/common/vagrant.sh",
-        "scripts/centos/X-windows.sh",
         "scripts/common/vmtools.sh",
         "scripts/common/chef.sh",
+        "scripts/centos/X-windows.sh",
         "scripts/centos/cleanup.sh",
         "scripts/common/minimize.sh"
       ],

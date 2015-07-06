@@ -6,6 +6,4 @@ if [[ "$X_WINDOWS" == "true" ]]; then
   
 else
   echo 'Not installing X-Windows system'
-  echo "$X_WINDOWS"
-  echo $X_WINDOWS
 fi
