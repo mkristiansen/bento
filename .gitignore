@@ -1,4 +1,3 @@
-bin/
 .bundle/
 iso
 *.box
@@ -7,7 +6,13 @@ packer_cache
 packer.log
 vdi
 .DS_Store
+<<<<<<< HEAD
 packer.out
 *.pvm
 
 
+=======
+/packer-*/
+*.variables.json
+/builds/
+>>>>>>> 04888f0df6cadfa71a4dc56a5f888989df70332b
