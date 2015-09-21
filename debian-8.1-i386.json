@@ -114,7 +114,6 @@
       "boot_wait": "10s",
       "disk_size": 40960,
       "guest_os_type": "debian",
-      "headless": "{{ user `headless` }}",
       "http_directory": "http",
       "iso_checksum": "{{user `iso_checksum`}}",
       "iso_checksum_type": "{{user `iso_checksum_type`}}",
@@ -180,17 +179,17 @@
     }
   ],
   "variables": {
-    "box_basename": "__unset_box_basename__",
+    "box_basename": "debian-8.1-i386",
     "build_timestamp": "{{isotime \"20060102150405\"}}",
     "git_revision": "__unknown_git_revision__",
     "headless": "",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
-    "iso_checksum": "e223823e0c159f057ec83bd51d4770a132e3e51b",
-    "iso_checksum_type": "sha1",
+    "iso_checksum": "74343980870d5c2c73e3c1a9d92ea6546b76070ccceeae7842c809557d07d53b",
+    "iso_checksum_type": "sha256",
     "iso_name": "debian-8.1.0-i386-CD-1.iso",
     "metadata": "floppy/dummy_metadata.json",
-    "mirror": "http://cdimage.debian.org/cdimage/release",
+    "mirror": "http://cdimage.debian.org/cdimage/archive",
     "mirror_directory": "8.1.0/i386/iso-cd",
     "name": "debian-8.1-i386",
     "no_proxy": "{{env `no_proxy`}}",
@@ -199,4 +198,3 @@
     "version": "2.1.TIMESTAMP"
   }
 }
-

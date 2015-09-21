@@ -135,7 +135,6 @@
       "boot_wait": "10s",
       "disk_size": 40960,
       "guest_os_type": "ubuntu",
-      "headless": "{{ user `headless` }}",
       "http_directory": "http",
       "iso_checksum": "{{user `iso_checksum`}}",
       "iso_checksum_type": "{{user `iso_checksum_type`}}",
@@ -201,18 +200,14 @@
     }
   ],
   "variables": {
-<<<<<<< HEAD:packer/ubuntu-14.10-amd64.json
-    "chef_version": "latest",
-    "mirror": "http://releases.ubuntu.com"
-=======
-    "box_basename": "__unset_box_basename__",
+    "box_basename": "ubuntu-10.04",
     "build_timestamp": "{{isotime \"20060102150405\"}}",
     "git_revision": "__unknown_git_revision__",
     "headless": "",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
-    "iso_checksum": "796e80702d65f2ee96e88874a1ab437e24df9cd6",
-    "iso_checksum_type": "sha1",
+    "iso_checksum": "3de19967318906fd57252ef67ed3ad411b89e3ea6b81205e26517530d7a8cd0b",
+    "iso_checksum_type": "sha256",
     "iso_name": "ubuntu-10.04.4-server-amd64.iso",
     "metadata": "floppy/dummy_metadata.json",
     "mirror": "http://releases.ubuntu.com",
@@ -222,7 +217,5 @@
     "preseed_path": "ubuntu-10.04/preseed.cfg",
     "template": "ubuntu-10.04-amd64",
     "version": "2.1.TIMESTAMP"
->>>>>>> 04888f0df6cadfa71a4dc56a5f888989df70332b:ubuntu-10.04-amd64.json
   }
 }
-
