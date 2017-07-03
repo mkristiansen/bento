@@ -27,9 +27,6 @@ dpkg --list \
     | grep -- '-dev$' \
     | xargs apt-get -y purge;
 
-# Delete compilers and other development tools
-apt-get -y purge cpp gcc g++;
-
 # Delete X11 libraries
 apt-get -y purge libx11-data xauth libxmuu1 libxcb1 libx11-6 libxext6;
 
@@ -42,4 +39,5 @@ apt-get -y purge popularity-contest;
 apt-get -y autoremove;
 apt-get -y clean;
 
-rm -f VBoxGuestAdditions_*.iso VBoxGuestAdditions_*.iso.?
+# delete any logs that have built up during the install
+find /var/log/ -name *.log -exec rm -f {} \;

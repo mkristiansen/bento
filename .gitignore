@@ -15,4 +15,10 @@ packer.out
 /packer-*/
 *.variables.json
 /builds/
+<<<<<<< HEAD
 >>>>>>> 04888f0df6cadfa71a4dc56a5f888989df70332b
+=======
+.kitchen
+.kitchen.*.yml
+Gemfile.lock
+>>>>>>> 3869bda09703774a3e5db1aca0d02c022f9d34db
